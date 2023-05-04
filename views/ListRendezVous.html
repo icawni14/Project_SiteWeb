@@ -1,0 +1,46 @@
+{{> header}}
+
+<section class="py-5 container">
+  <div>
+    <div>
+      <h1>Vos rendez-vous </h1>
+    </div>
+  </div>
+
+<div class="album py-5 ">
+  <div class="container">
+    <div class ="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {{#num_found}}
+      <div class="col">
+        <div class="card shadow-sm">
+
+          <img src="{{img}}" class="bd-placeholder-img card-img-top" width="100%" height= "225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body">
+              <p class="card-text">{{name}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                {{#authenticated1}}
+                  <div class="btn-group">
+                    <input class="btn btn-sm btn-warning" type="button" onclick="window.location.href='/DetailMesRendezVous/{{id_particulier}}'" value='Details' />
+                  </div>
+                {{/authenticated1}}
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+  {{/num_found}}
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+{{> footer}}

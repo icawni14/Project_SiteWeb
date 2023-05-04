@@ -1,0 +1,61 @@
+{{> header}}
+
+<DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+   		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container col-6 mx-auto text-center">
+		<div class="d-flex justify-content-center h-100">
+			<div class="card ">
+      <form action="/new_user" method='post'>
+
+			<div class="card-header">
+
+				<h5>Enregistrez-vous en tant qu'utilisateur</h5>
+
+
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+            <input type="text" id="login" placeholder="Nom d'utilisateur" name="name" class="form-control">
+
+
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+            <input type="password" id="password" placeholder="Mot de passe" name="password" class="form-control">
+					</div>
+					<div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember" required> Je certifie l'éxactitude des informations données.
+                        </label>
+                </div>
+
+					<div class="form-group">
+            <input type="submit" value="Nouveau compte" class="btn float-right w-20 btn btn-outline-warning btn-primary">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Vous avez déjà compte ?<a href="login_user">Connectez vous</a>
+				</div>
+			</div>
+      </form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+{{> footer}}

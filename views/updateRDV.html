@@ -1,0 +1,21 @@
+{{> header}}
+  <form action="/updateRDV/{{id_particulier}}" method="post">
+    <div>
+
+      <div>
+        <h1> Modifier un rendez-vous </h1>
+        <p>Heure de rendez-vous : <input type="text" name="heure" required></p>
+        <p>Date de rendez-vous : <input type="text" name="date" required></p>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required> Êtes-vous sûr de ces informations ? Si oui cochez cette case.
+          </label>
+        </div>
+        <div>
+          <input type="submit" value="Modifier" class="w-20 btn btn-outline-warning btn-primary">
+          <a href="/DetailMesRendezVous/{{id_particulier}}"class="w-20 btn btn-outline-warning btn-primary" >Annuler</a>
+        </div>
+      </div>
+    </div>
+  </form>
+{{> footer}}

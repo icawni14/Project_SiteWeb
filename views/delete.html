@@ -1,0 +1,14 @@
+{{> header}}
+
+  <div>
+    <div>
+      <h1> Supprimer un centre </h1>
+      <p>Êtes-vous sûr de vouloir supprimer ce centre "{{name}}" ?</p>
+      <form action="/delete/{{id_particulier}}" method="post">
+        <input type="submit" value="Effacer" class="w-20 btn btn-outline-warning btn-primary">
+        <a href="/read/{{id_particulier}}" class="w-20 btn btn-outline-warning btn-primary">Annuler<a>
+      </form>
+    </div>
+  </div>
+
+{{> footer}}

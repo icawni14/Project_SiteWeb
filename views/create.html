@@ -1,0 +1,28 @@
+{{> header}}
+<section class="py-5 container">
+  <form action="/create" method="post">
+    <div class="p-5 md-4 bg-light rounded-3">
+      <div class="h-100 p-5 text-black  rounded-3">
+        <div>
+          <div>
+            <h1> Ajouter un centre </h1>
+            <p>Nom du centre : <input type="text" name="name" required ></p>
+            <p>Image : <input type="url" name="img" required></p>
+            <p>Adresse : <br> <textarea name="adresse" required></textarea></p>
+            <p>Code postal : <input type="text" name="code" required></p>
+            <p>Tel : <input type="tel" name="tel" required></p>
+            <p>Heure ouverture : <input type="time" name="heureOuverture" required></p>
+            <p>Heure fermeture : <input type="time" name="heureFermeture" required></p>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> Êtes-vous sûr de ses informations? ? Si oui cochez cette case.
+              </label>
+          	</div>
+            <input class='btn btn-warning' type="submit"  value='Créer'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+{{> footer}}

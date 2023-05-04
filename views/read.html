@@ -1,0 +1,43 @@
+{{> header}}
+
+
+
+
+<div class="w3-container p-5 md-4">
+  <h2>Detail du centre </h2>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col p-4 d-flex flex-column position-static ">
+        <p>
+          {{#authenticated2}}
+            <a class="btn btn-warning me-2" href="/update/{{id_particulier}}">Modifier</a>
+            <a class="btn btn-warning me-2" href="/delete/{{id_particulier}}">Supprimer</a>
+          {{/authenticated2}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-5 md-4 bg-light rounded-3" style="width:100%">
+
+    <div class="w3-container w3-center">
+      <img src="{{img}}">
+      <p>Nom du centre : {{name}}</p>
+      <p>Adresse : {{adresse}}</p>
+      <p>Code : {{code}}</p>
+      <p>Tel : {{tel}}</p>
+      <p>Heure ouverture: {{heureOuverture}}</p>
+      <p>Heure fermeture : {{heureFermeture}}</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+{{> footer}}

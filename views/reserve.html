@@ -1,0 +1,19 @@
+{{> header}}
+<section class="py-5 container">
+  <form action="/reserve/{{id_particulier}}" method="post">
+    <div class="p-5 md-4 bg-light rounded-3">
+      <div class="h-100 p-5 text-black  rounded-3">
+        <div>
+          <div>
+            <h1> Reserver un rendez-vous </h1>
+
+            <p>Heure <input type="time" name="heure"></p>
+            <p>Date <input type="date" name="date"></p>
+            <input class='btn btn-warning' type="submit"  value='Créer'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  </section>
+{{> footer}}
